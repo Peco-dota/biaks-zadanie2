@@ -1,0 +1,30 @@
+{
+  "name": "biaks-zadanie2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/db-init.test.js && node test/users-query.test.js && node test/robots-query.test.js && node test/sqli-check.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peco-dota/biaks-zadanie2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peco-dota/biaks-zadanie2/issues"
+  },
+  "homepage": "https://github.com/Peco-dota/biaks-zadanie2#readme",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0"
+  }
+}
