@@ -1,4 +1,41 @@
-<!DOCTYPE html>
-<html>
-<body><h1>Placeholder — replaced in Task 8</h1></body>
+<%- include('partials/head', { title: 'NeuroForge Robotics' }) %>
+<body>
+  <%- include('partials/nav') %>
+
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-text">
+      <p class="hero-eyebrow">Autonomous systems lab</p>
+      <h1>Engineering the next generation of autonomous machines</h1>
+      <p class="hero-sub">Scroll to see it come apart.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container">
+      <h2>Our approaches</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Reinforcement Learning</h3>
+          <p>Policies trained in simulation and transferred to physical actuators via domain randomization.</p>
+        </article>
+        <article class="card">
+          <h3>Computer Vision</h3>
+          <p>Edge-deployed perception stacks for object detection, pose estimation, and SLAM.</p>
+        </article>
+        <article class="card">
+          <h3>Sim-to-Real Transfer</h3>
+          <p>Digital twins that close the gap between simulated training and real-world deployment.</p>
+        </article>
+        <article class="card">
+          <h3>Humanoid Platforms</h3>
+          <p>Bipedal locomotion and manipulation research for general-purpose labor robots.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+  <script type="module" src="/js/hero3d.js"></script>
+</body>
 </html>

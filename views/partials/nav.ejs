@@ -1,0 +1,21 @@
+<nav class="nav">
+  <div class="nav-brand"><a href="/">NeuroForge Robotics</a></div>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/models">Models</a>
+    <% if (user) { %>
+      <a href="/dashboard">Dashboard</a>
+      <form action="/logout" method="post" class="inline-form">
+        <button type="submit" class="link-button">Logout (<%= user.username %>)</button>
+      </form>
+    <% } else { %>
+      <a href="/login">Login</a>
+    <% } %>
+  </div>
+  <form action="/toggle-mode" method="post" class="mode-toggle">
+    <button type="submit" class="mode-badge mode-<%= mode %>">
+      <span class="mode-dot"></span>
+      Mode: <%= mode.toUpperCase() %>
+    </button>
+  </form>
+</nav>
