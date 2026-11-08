@@ -5,7 +5,7 @@ const { searchRobots, getRobotById } = require('../queries/robots');
 router.get('/', (req, res) => {
   const db = req.app.locals.db;
   const q = req.query.q || '';
-  const results = q ? searchRobots(db, q, req.session.mode) : [];
+  const results = searchRobots(db, q, req.session.mode);
   res.render('models', { q, results });
 });
 
