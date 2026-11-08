@@ -123,9 +123,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   justify-content: center;
   background-image:
     linear-gradient(180deg, rgba(15, 15, 15, 0.55) 0%, rgba(15, 15, 15, 0.85) 65%, var(--surface-page) 100%),
-    url('https://upload.wikimedia.org/wikipedia/commons/8/81/Atlas_frontview_2013.jpg');
+    url('https://upload.wikimedia.org/wikipedia/commons/7/7f/Puma_Robotic_Arm_-_GPN-2000-001817.jpg');
   background-size: cover;
-  background-position: center 15%;
+  background-position: center 30%;
 }
 .hero-text {
   text-align: center;
