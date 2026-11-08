@@ -31,7 +31,7 @@ function createDatabase() {
     'INSERT INTO users (username, password, is_admin, secret_note) VALUES (?, ?, ?, ?)'
   );
   const users = [
-    ['admin', 'sup3rS3cret!', 1, 'Root API key: sk-live-7f3a9c2e-prod'],
+    ['admin', 'admin', 1, 'Root API key: sk-live-7f3a9c2e-prod'],
     ['alice', 'alice2024', 0, 'Favorite lab: Boston Dynamics intern program'],
     ['bob', 'bobpass', 0, 'Payroll grade: L4'],
     ['carol', 'carolpw', 0, 'Pending patent: soft-gripper actuator'],
