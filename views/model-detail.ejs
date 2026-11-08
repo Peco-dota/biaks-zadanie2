@@ -1,0 +1,21 @@
+<%- include('partials/head', { title: 'Model detail — NeuroForge Robotics' }) %>
+<body>
+  <%- include('partials/nav') %>
+  <main class="wide">
+    <h1>Model detail</h1>
+    <form action="/models/view" method="get" class="form-inline">
+      <input type="text" name="id" value="<%= id %>" placeholder="Model ID…" />
+      <button type="submit">Look up</button>
+    </form>
+    <table class="data-table">
+      <thead><tr><th>ID</th><th>Name</th><th>Category</th><th>Description</th><th>Status</th></tr></thead>
+      <tbody>
+        <% rows.forEach(function(r) { %>
+          <tr><td><%= r.id %></td><td><%= r.name %></td><td><%= r.category %></td><td><%= r.description %></td><td><%= r.status %></td></tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>
