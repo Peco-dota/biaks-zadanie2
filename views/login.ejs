@@ -1,0 +1,15 @@
+<%- include('partials/head', { title: 'Login — NeuroForge Robotics' }) %>
+<body>
+  <%- include('partials/nav') %>
+  <main class="narrow">
+    <h1>Sign in</h1>
+    <% if (error) { %><p class="error"><%= error %></p><% } %>
+    <form action="/login" method="post" class="form">
+      <label>Username<input type="text" name="username" autocomplete="off" /></label>
+      <label>Password<input type="password" name="password" autocomplete="off" /></label>
+      <button type="submit">Sign in</button>
+    </form>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>

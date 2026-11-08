@@ -3,6 +3,7 @@ const express = require('express');
 const session = require('express-session');
 const { createDatabase } = require('./db/init');
 const pagesRouter = require('./routes/pages');
+const authRouter = require('./routes/auth');
 const modeRouter = require('./routes/mode');
 
 function createApp() {
@@ -31,6 +32,7 @@ function createApp() {
   app.locals.db = db;
 
   app.use('/', pagesRouter);
+  app.use('/', authRouter);
   app.use('/', modeRouter);
 
   return app;

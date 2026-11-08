@@ -1,0 +1,11 @@
+<%- include('partials/head', { title: 'Dashboard — NeuroForge Robotics' }) %>
+<body>
+  <%- include('partials/nav') %>
+  <main class="narrow">
+    <h1>Welcome, <%= user.username %></h1>
+    <p>Role: <%= user.is_admin ? 'Administrator' : 'Researcher' %></p>
+    <p>Internal note: <%= user.secret_note %></p>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>
